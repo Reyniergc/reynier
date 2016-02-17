@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+    PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+    <class name="models.Questionario" table="questionarios">
+        <id name="id" type="int">
+            <generator class="increment" />
+        </id>
+                    
+        <property name="pergunta"  type="string"    column="PERGUNTAS" />
+        <property name="resposta1" type="string"    column="RESPOSTA1" />
+        <property name="resposta2" type="string"    column="RESPOSTA2" />
+        <property name="resposta3" type="string"    column="RESPOSTA3" />
+        <property name="resposta4" type="string"    column="RESPOSTA4" />
+        <property name="respostaCorreta" type="int" column="RCORRETAS" />
+    </class>
+</hibernate-mapping>

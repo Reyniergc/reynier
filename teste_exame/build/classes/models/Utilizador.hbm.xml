@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+    PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+    <subclass name="models.Utilizador" discriminator-value="uti" extends="models.Pessoa">
+        <property name="email" type="string" column="email" />
+        <property name="password" type="string" column="password" />
+    </subclass>
+</hibernate-mapping>

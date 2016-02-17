@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping 
+    PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+        
+<hibernate-mapping>
+    <class name="models.Pessoa" table="utilizadores">
+        <id name="id" type="int">
+            <generator class="increment" />
+        </id>
+        
+        <discriminator column="DISC" type="string" />
+            
+        <property name="idade" type="int" column="idade" />
+        <property name="nome" type="string" column="nome" />
+        <property name="apelidos" type="string" column="apelidos" />
+        
+        <!--<subclass name="Utilizador" discriminator-value="uti">
+            <property name="email" type="string" column="email" />
+            <property name="nomeContaUtilizador" type="string" column="nomeContaUtilizador" />
+            <property name="password" type="string" column="password" />
+        </subclass>-->
+    </class>
+</hibernate-mapping>

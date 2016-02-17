@@ -1,0 +1,36 @@
+Quantos modificadores de acesso existem em JAVA?
+2
+5
+4
+3
+3
+Qual e a palavra reservada em JAVA que permite herdar de uma classe?
+abstract
+extends
+final
+implements
+2
+Qual das seguintes opcoes nao e uma palavra reservada em JAVA?
+public
+static
+protected
+Private
+4
+Qual e o tipo padron ou valor por defeito entre um float e um double?
+int
+double
+long
+float
+2
+Qual e o tipo padron ou valor por defeito entre um int e um long?
+long
+double
+int
+float
+3
+Uma classe em JAVA pode herdar de mais de uma classe?
+sim pode
+Pode herdar mais so de duas classes como maximo
+Em JAVA uma classe pode herdar apenas de uma so classe
+Pode herdar de pelo menos de uma classe 
+3
